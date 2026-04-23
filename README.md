@@ -6,4 +6,4 @@ What it does.
 
 3. Injects the shellcode which is the decrypted payload, written into the memory of the suspended svchost.exe process using VirtualAllocEx / WriteProcessMemory, then marked executable.  
 
-4. Exe4cutes via APC injection which uses QueueUserAPC to queue execution of the shellcode, then resumes the thread, causing the shellcode to run inside svchost.exe.
+4. Executes via APC injection which uses QueueUserAPC to queue execution of the shellcode, then resumes the thread, causing the shellcode to run inside svchost.exe.
